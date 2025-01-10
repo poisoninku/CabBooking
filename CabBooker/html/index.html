@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana's Cab Booking</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to the CSS file -->
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Nana's Cab Booking</h1>
+    <form id="bookingForm">
+        <label for="cabType">Select Cab Type:</label>
+        <select id="cabType" name="cabType">
+            <option value="Standard">Standard</option>
+            <option value="Luxury">Luxury</option>
+            <option value="SUV">SUV</option>
+            <option value="Economy">Economy</option>
+            <option value="Minivan">Minivan</option>
+            <option value="Convertible">Convertible</option>
+        </select>
+        <br><br>
+        <label for="distance">Enter Distance (in km):</label>
+        <input type="number" id="distance" name="distance" required>
+        <br><br>
+        <button type="submit">Book Cab</button>
+    </form>
+    <div id="result"></div>
+    <div id="timeEstimate"></div>
+</div>
+</body>
+</html>
